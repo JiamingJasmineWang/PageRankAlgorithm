@@ -34,6 +34,13 @@ d_{j} =
 \end{cases}
 $$
 
-and $\overrightarrow{e}$, $\overrightarrow{d}$ $\in \mathbb{R}^{R}$
+and $\overrightarrow{e}$, $\overrightarrow{d}$ $\in \mathbb{R}^{R}$, R is the total number of web pages
 
 ## Markov Transition Matrix
+We may add some randomness: At any node, we may go to a random node with probability $\alpha$
+
+So our new transition matrix is M = $\alpha P^{'} + (1-\alpha) \frac{1}{R} \overrightarrow{e}\ \overrightarrow{e}^T$, where $\overrightarrow{e}$ = $\[1, 1, ..., 1 \]^T$ and R is the total number of web pages.
+## Steady State
+When surfers keep clicking, they may or may not enter a steasy state, $\overrightarrow{p} = M \overrightarrow{p}$. We can solve it using eigen value. If M has a eigen value equals to 1, it shows that the steady state exists and $\overrightarrow{p}$
+
+We show that through Girshgorin Circle Theorem, if M is a positive Markov matrix, then we can find the solution.
