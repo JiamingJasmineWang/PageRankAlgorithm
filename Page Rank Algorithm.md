@@ -1,5 +1,5 @@
 # PageRankAlgorithm
-Page rank algorithm is developed by Google and used when we would like to calculate the frequency of visiting pages. Each pages may connected to each other, but not always. We use markov chain in this situation.
+Page rank algorithm is developed by Google and used when we would like to calculate the frequency of visiting pages. Each pages may connected to each other, but not always. It involves markov chain and linear algebra.
 ## Rank
 Let R be the total number of web pages, P $\in \mathbb{R}^{R\times R}$
 
